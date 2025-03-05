@@ -514,6 +514,33 @@
                             </Code>
                         </td>
                     </tr>
+                    <tr>
+                        <td>Checkboxes<br><br> Explicación del por que este elemento no se utilizó</td>
+
+                        <td>Define el ancho máximo que puede tener un elemento. <br><br>
+                            Este elemento es complicado por lo siguiente:<br><br>
+                            1. Estilo predeterminado del navegador: Los navegadores aplican estilos predeterminados a los elementos de formulario (los checkboxes son parte de los elementos de formulario). Estos estilos pueden variar entre navegadores, lo que dificulta la consistencia visual.<br> <br> 
+                            2. Limitaciones de CSS: Los checkboxes tienen una apariencia predeterminada que no se puede modificar completamente solo con CSS. Por ejemplo, cambiar la forma del checkbox o el icono de verificación puede requerir soluciones más complejas.<br> <br> 
+                        </td>
+
+                        <td></td>
+
+                        <td>
+                            Para personalizar un checkbox, la mejor práctica es ocultarlo y reemplazarlo con un elemento visual.
+                            
+                                Ocultar el checkbox original <br><br>
+                                <Code>
+                                input[type="checkbox"] {<br><br>
+                                    appearance: none; <br><span class="negrita" >(Elimina el estilo predeterminado, funciona en Chrome, pero en Safari requiere -webkit-appearance )</span><br><br>
+                                    -webkit-appearance: none; <br><span class="negrita" >(para navegadores basados en WebKit y Blink, funciona en Google Chrome, Safari, Edge (Chromium), y Opera.)</span><br><br>
+                                    -moz-appearance: none;<br><span class="negrita" >(para navegadores basados en Gecko) funciona en Mozilla Firefox.</span> <br><br>
+                                    width: 0;<br>
+                                    height: 0;<br>
+                                    position: absolute;<br><br>
+                                }<br><br>    
+                            </Code>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
