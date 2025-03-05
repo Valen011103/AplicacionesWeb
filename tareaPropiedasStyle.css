@@ -1,0 +1,64 @@
+
+
+header {
+    background-color: #93a3e1; /* Color de fondo azul oscuro */
+    padding: 30px 0; /* Espaciado interno arriba y abajo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+    text-align: center; /* Centra el contenido */
+    justify-content: center;
+    
+}
+
+header h1{
+    text-align: center; /* Centra el contenido */
+    color: #ffffff; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 30px;
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+#elaborado {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+main  { 
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 17px;
+    text-align: left;
+    font-family: Arial, sans-serif; 
+    }
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #6b77aa;
+    color: white;
+    text-align: center; 
+    vertical-align: middle; 
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody{
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.negrita {
+    font-weight: bold; /* Texto en negrita */
+}
+
+

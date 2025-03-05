@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tareaPropiedasStyle.css">
+    <title>Analizando Atributos CSS</title>
+</head>
+<body> 
+    <header>    
+        <h1>Análisis de Atributos CSS</h1> 
+        <div id= "elaborado"> Elaborador por: Valentina Méndez
+        </div>
+    </header> 
+
+    <main>
+     <section>
+        <div> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de <br>la propiedad</th>
+                        <th>Función</th>
+                        <th>Posibles valores</th>
+                        <th>Posibles estructuras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>background</td>
+                        
+                        <td>
+                            Define el fondo de un elemento. <br>
+                            <br>
+                            <span class="negrita" >Sus variaciones y respectivas funciones:</span> <br>
+                            <br>
+                            background-color: Define el color de fondo de un elemento. <br>
+                            <br>
+                            background-image: Permite establecer una imagen como fondo.<br>
+                            <br>
+                            background-position: Define dónde se coloca la imagen dentro del contenedor.<br>
+                            <br>
+                            background-size: Controla el tamaño de la imagen en relación con el elemento.<br>
+                            <br>
+                            background-repeat: Especifica si la imagen debe repetirse o no.<br>
+                            <br>
+                            background-attachment: Determina si el fondo se desplaza con el contenido o se mantiene fijo.<br>
+                            <br>
+                            background-clip: Controla hasta dónde se extiende el fondo dentro del elemento.<br>
+                            <br>
+                            background-origin: Define desde dónde se posiciona la imagen de fondo.
+                        </td>
+                        <td>
+                            <span class="negrita" > background-color: <br> </span>
+                            <ul>
+                                <li> red (color por nombre)</li>
+                                <li> #ff0000 (color en hexadecimal)</li>
+                                <li>rgb(255, 0, 0) (color en RGB) </li>
+                                <li>rrgba(255, 0, 0, 0.5) (color con transparencia) </li>                               
+                            </ul> 
+                            <span class="negrita" > background-image: <br> </span>
+                            <ul>
+                                <li>url('imagen.jpg') (Imagen de fondo) </li>
+                                <li> linear-gradient(to right, red, blue)(Degradado)</li>                             
+                            </ul> 
+                            <span class="negrita" > background-position: <br> </span>
+                            <ul>
+                                <li>left top (Arriba a la izquierda)</li>
+                                <li>center (Centro)</li>
+                                <li>right bottom (Abajo a la derecha) </li>
+                                <li>background-position: 50% 50%; (Coordenadas en porcentaje) </li>   
+                                <li>background-position: 100px 200px (Coordenadas en píxeles)</li>                            
+                            </ul>
+                            <span class="negrita" > background-size: <br> </span>
+                            <ul>
+                                <li>auto (Tamaño original de la imagen )</li>
+                                <li>cover (Cubre todo el elemento, sin distorsionar )</li>
+                                <li>contain (Ajusta la imagen para que encaje completamente)</li>
+                                <li>100px 50px; (Ancho x Alto personalizado) </li>                             
+                            </ul>
+                            <span class="negrita" > background-repeat: <br> </span>
+                            <ul>
+                                <li>repeat (Se repite en ambas direcciones) </li>
+                                <li>no-repeat (No se repite)</li>
+                                <li>repeat-x (Se repite solo en el eje X)</li>
+                                <li>repeat-y (Se repite solo en el eje Y)</li>                             
+                            </ul>
+                            <span class="negrita" > background-attachment: <br> </span>
+                            <ul>
+                                <li>scroll (Se mueve con el contenido) </li>
+                                <li>fixed (Permanece fijo en la pantalla)</li>
+                                <li>local (Se mueve dentro del contenedor) </li>                          
+                            </ul>
+                            <span class="negrita" > background-clip: <br> </span>
+                            <ul>
+                                <li>border-box (Se extiende hasta el borde (por defecto) </li>
+                                <li>padding-box () Se recorta en el área de padding) </li>
+                                <li>content-box (Solo se muestra en el contenido)  </li>                          
+                            </ul>
+                            <span class="negrita" > background-origin: <br> </span>
+                            <ul>
+                                <li>border-box; (Desde el borde) </li>
+                                <li>padding-box (Desde el padding) </li>
+                                <li>content-box (Desde el contenido) </li>                        
+                            </ul>
+                        </td>
+                        <td>
+                           <code> background: color image position/size <br> repeat attachment origin clip;</code> 
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>display</td>
+
+                        <td>
+                            Define el modelo de caja del elemento.<br>
+                            <br>
+                            Controla si los elementos aparecen en línea o en bloque.<br>
+                            <br>
+                            Permite estructuras avanzadas como Flexbox y Grid.<br>
+                            <br>
+                            Puede ocultar elementos sin eliminarlos del código.<br>
+                        </td>
+                            
+                        <td>   
+                            <span class="negrita" > none:  </span>Oculta el elemento. <br>
+                            <br>
+                            <span class="negrita" > block: </span> El elemento ocupa todo el ancho disponible. <br>
+                            <br>
+                            <span class="negrita" >inline:  </span>El elemento se comporta en línea (no genera salto de línea). <br>
+                            <br>
+                            <span class="negrita" > inline-block:  </span>Se comporta como en línea, pero permite definir ancho y alto. <br>
+                            <br>
+                            <span class="negrita" >flex:  </span>Activa el modelo Flexbox. <br>
+                            <br>
+                            <span class="negrita" >grid:  </span>Activa el modelo Grid. <br>
+                            <br>
+                            <span class="negrita" > table: </span> Se comporta como una tabla. <br>
+                            <br>
+                            <span class="negrita" >inherit:  </span>Hereda el valor del padre.<br>
+                        </td>
+
+                        <td>
+                            <code>
+                            .container {
+                                display: flex;
+                            }
+                        </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>justify-content<br>
+                            <br>
+                            (Solo funciona en display: flex o display: grid)</td>
+                        <td>
+                            Controla la alineación horizontal de los elementos en un contenedor flex o grid.
+                        </td>
+                        <td>
+                            <span class="negrita" > flex-start: </span>Alinea los elementos al inicio.<br>
+                            <br>
+                            <span class="negrita" >flex-end: </span>Alinea los elementos al final.<br>
+                            <br>
+                            <span class="negrita" > center:</span> Centra los elementos.<br>
+                            <br>
+                            <span class="negrita" > space-between: </span>Espacio uniforme entre elementos.<br>
+                            <br>
+                            <span class="negrita" > space-around:</span> Espacio alrededor de cada elemento.<br>
+                            <br>
+                            <span class="negrita" > space-evenly:</span> Espacio uniforme en todos lados.<br>
+                        </td>
+                        <td>
+                            <code>
+                                .container {<br>
+                                    <br>
+                                    display: flex;
+                                    justify-content: center;<br>
+                                    <br>
+                                }
+                           </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>Define el espacio interno entre el contenido y el borde del elemento.</td>
+                        <td>
+                            <span class="negrita" >px: </span>Unidad fija de píxeles en la pantalla.<br>
+                            Características:
+                            <ul>
+                                <li>Tiene un tamaño absoluto, no cambia con el contenedor</li>
+                                <li>Se usa para tamaños de fuente, bordes, márgenes, etc</li>
+                                <li>No es recomendable para diseños responsivos</li>
+                            </ul>
+                            <span class="negrita" > %:</span> Relativo al elemento padre.<br>
+                            Características:
+                            <ul>
+                                <li>Se adapta dinámicamente al tamaño del contenedor</li>
+                                <li>Se usa para width, height, margin, padding, etc</li>
+                            </ul>
+                            <span class="negrita" >  em:</span> tamaño de la fuente del elemento padre.<br>
+                            Características:
+                            <ul>
+                                <li>Útil para hacer que el texto escale con el diseño</li>
+                                <li>Se usa en font-size, padding, margin, etc</li>
+                                <li>Puede generar efectos de herencia acumulativa</li>
+                            </ul>
+                            <span class="negrita" >rem:</span> tamaño base del html (por defecto, 16px).<br> 
+                            Características:
+                            <ul>
+                                <li>No hereda acumulativamente (más estable que em)</li>
+                                <li>Se usa para font-size, padding, margin, etc.</li>
+                                <li>No es recomendable para diseños responsivos</li>
+                            </ul>
+                            <span class="negrita" > auto:</span> El navegador decide el tamaño del elemento según el contenido o el espacio disponible.<br>
+                            Características:
+                            <ul>
+                                <li> Útil en width, height, margin</li>
+                                <li>Se usa comúnmente en margin: auto; para centrar elementos</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <Code>  
+                            div {
+                                padding: 15px;
+                            }<br>
+                        </Code>
+                            <ul>
+                                <li>padding: 20px;<br> (Espacio uniforme en todos los lados)</li><br>
+                                <li>padding: 10px 20px;<br> (Arriba/abajo (10px), Izquierda/derecha (20px))</li><br>
+                                <li>padding: 10px 15px 20px;<br> (Arriba (10px), Izquierda/derecha (15px), Abajo (20px))</li><br>
+                                <li>padding: 10px 15px 20px 25px;<br> (Arriba (10px), Derecha (15px), Abajo (20px), Izquierda)</li><br>
+                            </ul>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>max-width</td>
+                        <td>Define el ancho máximo que puede tener un elemento.</td>
+                        <td>
+                            <span class="negrita" >px </span><br>
+                            <br>
+                            <span class="negrita" >  em </span><br>
+                            <br>
+                            <span class="negrita" >rem </span><br>
+                            <br>
+                            <span class="negrita" > % </span> 
+                        </td>
+                        <td>
+                            <Code>
+                            div {
+                                max-width: 800px;
+                            }
+                            </Code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>Define el ancho exacto de un elemento.</td>
+                        <td>
+                            <span class="negrita" >  inherit:</span> el elemento tomará el mismo ancho (width) que su contenedor padre<br>
+                            <br>
+                            <span class="negrita" >px</span><br>
+                            <br>
+                            <span class="negrita" > %</span><br>
+                            <br>
+                            <span class="negrita" >auto </span><br>
+                            
+                        </td>
+                        <td>
+                            <Code>
+                                div {
+                                    width: 100%;
+                                }
+                            </Code>
+                            <ul >
+                                <li>width: 400px;<br> (Ancho fijo de 400px)</li><br>
+                                <li>width: 50%;<br> (Toma la mitad del ancho del contenedor)</li><br>
+                                <li>width: auto;<br> (Se ajusta al contenido)</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>Define el espaciado externo de un elemento</td>
+                        <td>
+                            <span class="negrita" >px </span><br>
+                            <br>
+                            <span class="negrita" >auto </span>
+                        </td>
+                        <td>
+                            <Code>
+                                div {
+                                    margin: 10px auto;
+                                }
+                            </Code>
+                            <ul >
+                                <li>margin: 20px;<br> (Espaciado uniforme en todos los lados)</li><br>
+                                <li>margin: 10px 20px;<br> (Arriba/abajo (10px), Izquierda/derecha (20px))</li><br>
+                                <li>margin: 10px 15px 20px;<br>(Arriba (10px), Izquierda/Derecha (15px), Abajo (20px))</li><br>
+                                <li>margin: 10px 15px 20px 25px;<br> Arriba (10px), Derecha (15px), Abajo (20px), Izquierda (25px)</li><br>
+                                <li>margin: auto;<br> (Centra el elemento dentro del contenedo)</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>Define la altura del elemento</td>
+                        <td>
+                            <span class="negrita" >vh: </span>altura de un elemento en relación con la altura total de la ventana del navegador. <br>
+                            <ul>
+                                <li> 1 vh equivale al 1% del alto total de la pantalla.</li>
+                                <li>100 vh significa que el elemento ocupará el 100% de la altura de la ventana.</li>
+
+                            </ul>
+
+                            <span class="negrita" >px </span><br>
+                            <br>
+                            <span class="negrita" > % </span><br>
+                            <br>
+                            <span class="negrita" >auto </span><br>
+                            <br>
+                            
+                        </td>
+                        <td>
+                            <Code>
+                                div {
+                                    height: 300px;
+                                }                                
+                            </Code>
+                            <ul >
+                                <li>height: 500px;<br> (Altura fija)</li><br>
+                                <li>height: 100vh;<br> (Toma el 100% de la altura de la pantalla)</li><br>
+                                <li>height: auto;<br> (Se ajusta al contenido)</li><br>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>align-items</td>
+                        <td>Alinea elementos en el eje vertical dentro de un contenedor flex</td>
+                        <td>
+                           
+                            <span class="negrita" >flex-start:</span>Alineado arriba<br>
+                            <br>
+                            <span class="negrita" > center: </span> Centrado<br>
+                            <br>
+                            <span class="negrita" > flex-end: </span> Alineado abajo<br>
+                            <br>
+                            <span class="negrita" >stretch: </span> Ajusta el tamaño de los elementos
+                          
+                        </td>
+                        <td>
+                            <Code>
+                                .container {
+                                display: flex;
+                                align-items: center;
+                            }
+                            </Code>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>font-size </td>
+                        <td>Define el tamaño del texto</td>
+                        <td>
+                            <span class="negrita" > vw: </span>Relativo al ancho de la pantalla.<br>
+                            <br>
+                            <span class="negrita" >px </span><br>
+                            <br>
+                            <span class="negrita" >  em </span><br>
+                            <br>
+                            <span class="negrita" >rem </span><br>
+                            <br>
+                            <span class="negrita" > % </span><br>   
+                        </td>
+                        <td>
+                            <Code>
+                                p {
+                                    font-size: 18px;
+                                }
+                            </Code>
+                            <ul >
+                                <li>font-size: 20px;<br> (Tamaño fijo de 20px)</li><br>
+                                <li>font-size: 1.5rem;<br> (1.5 veces el tamaño base)</li><br>
+                                <li>font-size: 120%;</li><br>
+                                <li>font-size: 5vw;</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td> Define la tipografía del texto</td>
+                        <td>
+                            "Arial", sans-serif<br>
+                            <br>
+                            "Verdana", sans-serif<br>
+                            <br>
+                            "Times New Roman", serif<br>
+                            <br>
+                            "Georgia", serif<br>
+                            <br>
+                            "Courier New", monospace<br>
+                            <br>
+                            "Lucida Console", monospace<br>
+                            <br>
+                            "Trebuchet MS", sans-serif<br>
+                            <br>
+                            "Comic Sans MS", cursive<br>
+                        </td>
+                        <td>
+                            <Code>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                }
+                            </Code>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>Alinea el texto dentro de un elemento</td>
+                        <td>
+                            <span class="negrita" > left: </span>Alineado a la izquierda<br>
+                            <br>
+                            <span class="negrita" > center: </span>Centrado<br>
+                            <br>
+                            <span class="negrita" > right: </span>Alineado a la derecha<br>
+                            <br>
+                            <span class="negrita" > justify: </span>Justificado<br>
+                        </td>
+                        <td>
+                            <Code>
+                                p {
+                                    text-align: center;
+                                }
+                                
+                            </Code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>border-botton</td>
+                        <td> Agrega un borde en la parte inferior del elemento</td>
+                        <td>
+                            <span class="negrita" >Width:</span> define el grosor del borde<br>
+                                <br>
+                            <span class="negrita" > Style: </span>define el tipo del borde, ejemplo: 
+                                <ul>
+                                    <li>solid: Línea sólida (default)</li>
+                                    <li>dashed: Línea discontinua</li>
+                                    <li>dotted: Línea punteada</li>
+                                    <li>double: Doble línea</li>
+                                    <li>groove: Efecto de relieve</li>
+                                    <li>ridge: Efecto de bisel</li>
+                                </ul>
+                            <span class="negrita" >Color: </span>define el color del borde 
+                        </td>
+                        <td>
+                            <Code>
+                                div {
+                                    border-bottom: 2px dashed blue;
+                                }
+                                
+                            </Code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>border-top</td>
+                        <td>Agrega un borde en la parte superior del elemento</td>
+                        <td><span class="negrita" >Width, Style, Color</span> </td>
+                        <td>
+                            <Code>
+                                div {
+                                    border-top: 5px solid black;
+                                }
+                                
+                            </Code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>border-radious</td>
+                        <td>Redondea las esquinas de un elemento</td>
+                        <td>
+                            <span class="negrita" >px: </span>nivel de cruva en las esquinas<br>
+                        </td>
+                        <td>
+                            <Code>
+                                div {
+                                    border-radius: 15px;
+                                }                                
+                            </Code>
+                            <ul> 
+                                <li>border-radius: 10px;<br>Bordes redondeados de 10px.</li>
+                                <br>
+                                <li>border-radius: 50%;<br>Forma circular.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@import</td>
+                        <td>
+                             Permite cargar una hoja de estilo externa dentro de otra hoja CSS.<br>
+                             <br>
+                             Se usa para organizar mejor los estilos y reutilizar código.<br>
+                             <br>
+                             Se coloca al inicio del archivo CSS, antes de cualquier otra regla.<br>
+                        </td>
+                        <td>importaciones de links, .css, librerías y más</td>
+                        <td>
+                            <Code>
+                                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+                                <br><br>
+                                body {
+                                    font-family: "Poppins", sans-serif;
+                                }
+
+                            </Code>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+     </section>
+    </main>
+</body>
+</html>
