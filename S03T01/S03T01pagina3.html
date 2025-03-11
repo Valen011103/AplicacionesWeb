@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>S03 T01</title>
+    <link rel="stylesheet" href="S03T01Style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1> S03T01: Display Flex vs Grid </h1>
+           <h2> Elaborado por: Valentina Mendez</h2>
+        </header>
+        <nav class="nav-lateralTres">
+            <ul>
+                <li><strong>Menu</strong></li>
+                <li id="paginaUNO"><a href="S03T01.html">display: flex</a></li>
+                <li id="paginaDOS"><a href="S03T01pagina2.html">display: grid</a></li>
+                <li id="paginaTRES"><a href="S03T01pagina3.html">Casos de uso y diferencias</a></li>
+            </ul>
+        </nav>
+        
+        <section class="seccionDocumento">
+            <h1>
+                Casos de uso
+            </h1>
+            <p> 
+                Flexbox permite a los desarrolladores construir diseños de cuadrícula flexibles, adaptándose dinámicamente al contenido.
+                Grid, por su parte, facilita la creación de estructuras complejas y responsive de manera organizada y eficiente.
+                Ambas brindan un control preciso sobre la posición de los elementos en una página web.
+            </p>
+            <div class="bloque-Caracteristicas">
+                <h2 class="titulos"> Casos en los que es más conveniente utilizar uno u otro: </h2>
+                <p> Se considera el uso de <code>display:grid</code> cuando:</p>
+                <ul class="Características">
+                    <li>Se requiere una estructura más compleja y alineada.</li>
+                    <li>Se desea agregar espacios sobre los elementos de bloque.</li>
+                    <li>Se necesita un diseño bidimensional con filas y columnas.</li>
+                    <li>Es importante que los elementos se acomoden de manera ordenada dentro de una cuadrícula.</li>
+                    <li>Se busca un control preciso sobre tamaños y posiciones de los elementos.</li>
+                </ul>
+                <p> Se considera el uso de <code>display:flex</code> cuando:</p>
+                <ul class="Características">
+                    <li>Se tiene un diseño pequeño, con algunas filas y columnas.</li>
+                    <li>No se sabe cómo se verá el contenido en la página y se desea que todo encaje.</li>
+                    <li>Se necesita organizar elementos en una sola dimensión (fila o columna).</li>
+                    <li>Los elementos deben ajustarse dinámicamente según el contenido.</li>
+                    <li>Es importante que los elementos puedan cambiar de orden fácilmente.</li>
+                </ul>
+            </div>
+            <div class="bloque-diferencias">
+                <h1>
+                    Diferencias
+                </h1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Propiedad</th>
+                                <th>display:grid</th>
+                                <th>display:flex</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Dimensionalidad y Flexibilidad  </td>
+                                <td> Sistema bidimensional (filas y columnas).Se definen tanto filas como columnas al mismo tiempo.
+                                    <br><br>
+                                    Ejemplo:<br><br> 
+                                    <code class="contenedores">
+                                        <strong>.contenedor { </strong><br><br>
+                                            display: grid;<br>
+                                            grid-template-columns: repeat(3, 1fr);<br>
+                                            grid-template-rows: auto;<br>
+                                            gap: 10px;<br><br>
+                                        <strong> }</strong><br>
+                                     </code>   
+                                </td>
+                                
+                                <td> Sistema unidimensional (fila o columna).Se organizan los elementos en una sola dirección. 
+                                    <br><br>
+                                    Ejemplo:<br><br>
+                                    <code class="contenedores">
+                                        <strong>.contenedor { </strong><br><br>
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;<br><br>
+                                        <strong> }</strong>
+                                     </code>
+                                </td>
+                                
+                            </tr>  
+                            <tr>
+                                <td> Alineación de elementos </td>
+                                <td> CSS Grid posiciona los elementos usando coordenadas numéricas, 
+                                     lo que permite ubicarlos en una cuadrícula exacta.
+                                     <br><br>
+                                     Ejemplo:<br><br>
+                                     <code class="contenedores">
+                                        <strong>.contenedor{ </strong><br><br>
+                                            display: grid;<br>
+                                            align-items: center;<br>
+                                            justify-items: center;<br><br>
+                                        <strong> }</strong><br>
+                                     </code><br>
+                                     
+                                </td>
+                                     
+                                <td> CSS Flexbox usa posicionamiento relativo y márgenes, lo que 
+                                     facilita la alineación dinámica  
+                                     <br><br>
+                                     Ejemplo:<br><br>
+                                     <code class="contenedores">
+                                        <strong>.contenedor{ </strong><br><br>
+                                            display: flex;<br>
+                                            justify-content: center;<br>
+                                            align-items: center;<br><br>
+                                        <strong> }</strong><br>
+                                     </code>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td> Gestión de elementos </td>
+                                <td> CSS Grid permite posicionar elementos fácilmente cambiando las coordenadas.  
+                                    <br><br>
+                                     Ejemplo:<br><br>
+                                     <code class="contenedores">
+                                        <strong>.items{ </strong>
+                                            grid-column: 2/4; 
+                                        <strong> }</strong><br>
+                                     </code><br>
+                                     (Ubica el elemento en la columna 2 a la 4)
+                                </td>
+                                <td> CSS Flexbox permite cambiar el orden y tamaño de los elementos dinámicamente, ajustando los márgenes automáticamente.
+                                <br><br>
+                                Ejemplo:<br><br>
+                                <code class="contenedores">
+                                    <strong>.items{ </strong> border: 2;<strong> }</strong><br>
+                                 </code>
+                                </td>
+                            </tr>  
+
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>Bibliografía: 
+                <br><br>
+                Gupta, A. (2025, January 26). CSS Grid vs. Flexbox: A tutorial to understand the key differences. Simplilearn.com.<br> 
+                https://www.simplilearn.com/tutorials/css-tutorial/css-grid-vs-flexbox
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

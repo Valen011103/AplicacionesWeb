@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>S03 T01</title>
+    <link rel="stylesheet" href="S03T01Style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+           <h1> S03T01: Display Flex vs Grid </h1>
+           <h2> Elaborado por: Valentina Mendez</h2>
+        </header>
+        <nav class="nav-lateralDos">
+            <ul>
+                <li><strong>Menu</strong></li>
+                <li><a href="S03T01.html">display: flex</a></li>
+                <li><a href="S03T01pagina2.html">display: grid</a></li>
+                <li><a href="S03T01pagina3.html">Casos de uso y diferencias</a></li>
+            </ul>
+        </nav>
+        
+        <section class="seccionDocumento">
+            <h1>
+               <code>display:grid</code> 
+            </h1>
+            <p> 
+                Al declarar la propiedad display como grid o inline-grid, creamos un contenedor de cuadrícula, 
+                esto significa que los elementos dentro del contenedor se acomodaran como un conjunto de 
+                líneas horizontales y verticales que se intersectan - un grupo define columnas y el otro filas.
+                Los elementos se pueden colocar en la cuadrícula respetando estas columnas y filas.
+            </p><br>
+            <div class= "bloque-Caracteristicas">
+              <h2 class="titulos">Características</h2>
+              <P>El diseño de cuadrícula(grid) CSS tiene las siguientes características:</P>  
+                <ul class="Características">
+                    <li><strong>Tamaños fijos y flexibles:</strong> se pueden crear cuadrículas con tamaños fijos, 
+                        utilizando píxeles. También se pueden crear cuadrículas utilizando tamaños flexibles con 
+                        porcentajes o con la nueva unidad de medida fr (fracción), diseñada para este propósito.</li><br>
+
+                    <li><strong>Posicionamiento de elementos:</strong> colocar elementos en una ubicación precisa en 
+                        la cuadrícula utilizando números de línea, nombres o seleccionando un área de la cuadrícula. Grid 
+                        también contiene un algoritmo para controlar la ubicación de elementos que no tienen una posición
+                        explícita en la cuadrícula.</li><br>
+
+                    <li><strong>Creación de líneas adicionales para alojar contenido: </strong> con grid se pueden definir 
+                        cuántas filas y columnas se requieran, sin embargo, si se agregas más elementos de los que caben en 
+                        la cuadrícula, grid creará automáticamente nuevas filas o columnas para acomodarlos.</li><br>
+
+                    <li><strong>Control de alineación:</strong>controlar la forma cómo se alinean los elementos una 
+                        vez colocados en un área de cuadrícula y cómo está alineada toda la cuadrícula.</li><br>
+
+                    <li><strong>Control de contenido superpuesto:</strong>colocar varios elementos en la misma celda de la 
+                        cuadrícula, lo que significa que pueden superponerse (solaparse) unos sobre otros.Para controlar 
+                        cuál elemento está por encima o por debajo, se utiliza la propiedad z-index.  </li>
+                </ul>
+            </div><br>
+            <div>
+                <h2 class="titulos"Características> <strong>Filas y columnas del grid</strong> </h2>
+                <p>
+                    Se definen filas y columnas en la cuadrícula con las propiedades <code><strong>grid-template-columns</strong></code> y <code><strong>grid-template-rows</strong></code>.
+                </p>
+            </div><br>
+            <div> 
+                <h2 class="titulos">Ejemplo de uso</h2>  
+            </div>
+            <div>
+                <img src="ejemploGrid.png" alt="ejemplo de display grid" class="ajustar-imagenDOS">
+            </div>
+        </section>
+        <footer>
+            <p>Bibliografía: 
+                <br><br>
+                Basic concepts of grid layout - CSS | MDN. (n.d.). MDN Web Docs. <br>
+                https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+             </p>
+        </footer>
+    </main>
+</body>
+</html>

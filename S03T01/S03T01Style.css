@@ -1,0 +1,188 @@
+body{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif; 
+}
+main{
+    display:block;
+    background: #fff;
+    max-width: 180vh;
+    width: 100%;
+    flex:1;
+}
+header{
+    background: #93a3e1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+Header h2{
+    text-align: center;
+    font-size: 15px;
+}
+
+section{
+    padding-right: 25px;
+}
+
+
+.nav-lateral {
+    width: 130px;
+    float: left; /* Lo pone a la izquierda */
+    background-color: #c1caeebf;
+    padding: 15px;
+    height: 650px; /* Que ocupe toda la altura de la pantalla */
+    margin: 10px;
+    margin-right: 30px;
+    color: #000000;
+    cursor: pointer;
+    vertical-align: top; 
+}
+
+.nav-lateral ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.nav-lateral a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    
+    
+}
+.nav-lateral a:hover {
+    background-color: #93a3e1;
+    vertical-align: middle; 
+
+}
+
+.nav-lateralDos{
+    width: 130px;
+    float: left; /* Lo pone a la izquierda */
+    background-color: #c1caeebf;;
+    padding: 15px;
+    height: 1204px; /* Que ocupe toda la altura de la pantalla */
+    margin: 10px;
+    margin-right: 30px;
+    color: #000000
+
+}
+.nav-lateralDos ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.nav-lateralDos a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+
+}
+.nav-lateralDos a:hover {
+    background-color: #93a3e1;
+    vertical-align: middle; 
+
+}
+
+.nav-lateralTres{
+    width: 130px;
+    float: left; /* Lo pone a la izquierda */
+    background-color: #c1caeebf;;
+    padding: 15px;
+    height: 1100px; /* Que ocupe toda la altura de la pantalla */
+    margin: 10px;
+    margin-right: 30px;
+    color: #000000
+
+}
+.nav-lateralTres ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.nav-lateralTres a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+
+}
+.nav-lateralTres a:hover {
+    background-color: #93a3e1;
+    vertical-align: middle; 
+
+}
+.seccionDocumento p{
+    text-align: justify
+}
+
+.ajustar-imagen {
+    width: 400px;  /* Ancho fijo */
+    height: 300px; /* Alto fijo */
+}
+
+.ajustar-imagenDOS {
+    width: 400px;  /* Ancho fijo */
+    height: 600px; /* Alto fijo */
+}
+
+.titulos{
+    font-size: 17px;
+}
+
+.bloque-Caracteristicas{
+    display: block;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 14px;
+    }
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #6b77aa;
+    color: white;
+    text-align: center; 
+}
+tr{
+    vertical-align: top; 
+
+}
+
+.bloque-diferencias{
+    display: block;
+}
+
+footer{
+    display: flex;
+    margin-top: 70px;  ;
+    padding: 10px;
+    /* PREGUNTAR como poner el footer al final sin tener que hacerlo con margin */
+    background: #93a3e1;
+    margin: 10px;
+}
+
+footer p{
+    font-size: 10px;
+    padding: 0;
+}
+
+.contenedores{
+    font-size: 11px;
+}
