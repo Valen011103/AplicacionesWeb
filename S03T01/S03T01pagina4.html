@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>S03 T01</title>
+    <link rel="stylesheet" href="S03T01Style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1> S03T01: Display Flex vs Grid </h1>
+           <h2> Elaborado por: Valentina Méndez</h2>
+        </header>
+        <nav class="nav-lateralCuatro">
+            <ul>
+                <li id="menu"><strong>Menu</strong></li>
+                <li id="tarea"><strong>S03 T01</strong></li>
+                <li><a href="S03T01.html">display: flex</a></li>
+                <li><a href="S03T01pagina2.html">display: grid</a></li>
+                <li><a href="S03T01pagina3.html">Casos de uso y diferencias</a></li>
+                <li id="tarea"><strong>S03 T02</strong></li>
+                <li><a href="S03T01pagina4.html">Nomenclatura CSS</a></li>
+            </ul>
+        </nav>
+        
+        <section class="seccionDocumento">
+            <div class="bloque-diferencias">
+                <h1>
+                    Nomenclatura CSS
+                </h1>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nomenclatura</th>
+                                <th>Ventajas</th>
+                                <th>Desventajas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                <div>
+                                    <h2>BEM(Block Element Modifier)</h2>
+                                    <div>
+                                        <p>
+                                            Metodología que organiza el código CSS en bloques, 
+                                            elementos y modificadores, siguiendo una convención 
+                                            de nombres específica.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><strong>Block:</strong>Representa un componente autónomo.(Ej: .button)</li>
+                                            <li><strong>Element:</strong> Una parte del bloque que no tiene sentido por sí sola.(Ej: .button__icon)</li>
+                                            <li><strong> Modifier:</strong>Define una variación del bloque o elemento.(Ej: .button--primary)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </td>
+                                <td> 
+                                    <div>
+                                        <ul>
+                                            <li>Facilita el mantenimiento y escalabilidad del CSS.</li>
+                                            <li>Evita colisiones de estilos.</li>
+                                            <li>Facilita la reutilización de componentes.</li>
+                                        </ul>
+                                    </div>
+                                </td> 
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Puede generar nombres largos y repetitivos.</li>
+                                            <li>Requiere disciplina en la nomenclatura.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>
+                                    <div>
+                                        <h2>OOCSS (Object-Oriented CSS)</h2>
+                                        <div>
+                                            <p>
+                                                OOCSS promueve la reutilización de clases CSS
+                                                al separar la estructura (el contenedor) y el 
+                                                estilo (la apariencia).
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Separa estilos en "estructura" y "apariencia".</li>
+                                                <li>Utiliza clases genéricas reutilizables.</li>                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Reduce la duplicación de código.</li>
+                                            <li>Mejora la reutilización de estilos en múltiples componentes. </li>
+                                        </ul>
+                                    </div>
+                                </td>                          
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Puede ser difícil de implementar en proyectos existentes.</li>
+                                            <li>Puede llevar a una estructura menos clara si no se usa correctamente.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>   
+                            <tr>
+                                <td>
+                                    <div>
+                                        <h2>SMACSS (Scalable and Modular Architecture for CSS)</h2>
+                                        <div>
+                                            <p>
+                                                SMACSS es una metodología que divide los estilos CSS en cinco categorías:
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li><strong>Base: </strong>Estilos globales y predeterminados.</li>
+                                                <li><strong>Layout:</strong> Define la estructura general de la página.</li>
+                                                <li><strong> Module:</strong>Componentes reutilizables.</li>
+                                                <li><strong>State:</strong>Estados dinámicos (Ej: .is-active).</li>
+                                                <li><strong>Theme:</strong>Variaciones de apariencia.</li>
+                                            
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Flexibilidad y modularidad en proyectos grandes.</li>
+                                            <li>Facilita la organización de archivos CSS.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>No impone una nomenclatura específica.</li>
+                                            <li>Puede requerir más esfuerzo inicial para estructurar correctamente.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <div>
+                                        <h2>SUIT CSS</h2>
+                                        <div>
+                                            <p>
+                                                SUIT CSS es un enfoque modular basado en BEM, 
+                                                pero con algunas variaciones en la convención de nombres.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Utiliza un sistema de nombres basado en componentes (ComponentName).</li>
+                                                <li>Elementos (ComponentName-descendant).</li>
+                                                <li>Modificadores (ComponentName--modifier).</li>
+                                                <li>Estados (is-state).</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Facilita la escalabilidad y modularidad.</li>
+                                            <li>Más conciso que BEM.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <ul>
+                                            <li>Menos popular que BEM, lo que implica menos documentación y adopción.</li>
+                                            <li>Puede ser difícil de implementar en proyectos existentes.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr> 
+
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+        </section>
+        <footer>
+            <p>Bibliografía: 
+                <br><br>
+                
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

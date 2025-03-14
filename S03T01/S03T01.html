@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>S03 T01</title>
     <link rel="stylesheet" href="S03T01Style.css">
 
 </head>
-
 <body>
     <main>
         <header>
             <h1> S03T01: Display Flex vs Grid </h1>
-            <h2> Elaborado por: Valentina Mendez</h2>
+           <h2> Elaborado por: Valentina Méndez</h2>
         </header>
         <nav class="nav-lateral">
             <ul>
-                <li><strong>Menu</strong></li>
+                <li id="menu"><strong>Menu</strong></li>
+                <li id="tarea"><strong>S03 T01</strong></li>
                 <li><a href="S03T01.html">display: flex</a></li>
                 <li><a href="S03T01pagina2.html">display: grid</a></li>
                 <li><a href="S03T01pagina3.html">Casos de uso y diferencias</a></li>
+                <li id="tarea"><strong>S03 T02</strong></li>
+                <li><a href="S03T01pagina4.html">Nomenclatura CSS</a></li>
             </ul>
         </nav>
-
+        
         <section class="seccionDocumento">
             <h1>
-                <code>display:flex</code>
+               <code>display:flex</code> 
             </h1>
-            <p>
-                Al poner la propiedad display como "flex" estamos diciendo que el contenedor es
-                flex y se comportara como tal. El resultado es que todos los ítems se alinearán en una solo fila,
-                usando el tamaño del contenedor como su tamaño en el eje principal. Si hay más ítems de los que
-                caben en el contenedor, estos no pasarán más abajo si no que sobrepasarán el margen. Si hay ítems
+            <p> 
+                Al poner la propiedad display como "flex" estamos diciendo que el contenedor es 
+                flex y se comportara como tal. El resultado es que todos los ítems se alinearán en una solo fila, 
+                usando el tamaño del contenedor como su tamaño en el eje principal. Si hay más ítems de los que 
+                caben en el contenedor, estos no pasarán más abajo si no que sobrepasarán el margen. Si hay ítems 
                 más altos que otros, todos los ítems serán ajustados en el eje cruzado para alcanzar al mayor.
-            </p><br>
+            </p>
             <div class="bloque-Caracteristicas">
                 <h2 class="titulos">Características</h2>
-                <p> Al crear un contenedor flex todos los ítems flex contenidos se comportarán de la siguiente
+                <p> Al crear un contenedor flex todos los ítems flex contenidos se comportarán de la siguiente 
                     manera:</p>
                 <ul class="Características">
                     <li>Los ítems empiezan desde el margen inicial sobre el eje principal.</li>
@@ -48,21 +49,20 @@
                     <li>La propiedad flex-basis es definida como auto.</li>
                 </ul>
             </div><br>
-            <div>
-                <h2 class="titulos">Ejemplo de uso</h2>
+            <div> 
+                <h2 class="titulos">Ejemplo de uso</h2>  
             </div>
             <div>
-                <img src="displayFlex.png" alt="ejemplo de display Flex" class="ajustar-imagen">
+                <img src="displayFlex.png" alt="ejemplo de display Flex" class="ajustar-imagen" >
             </div>
         </section>
         <footer>
-            <p>Bibliografía:
+            <p>Bibliografía: 
                 <br><br>
-                Conceptos Básicos de flexbox - CSS | MDN. (2024, July 28). MDN Web Docs.
+                Conceptos Básicos de flexbox - CSS | MDN. (2024, July 28). MDN Web Docs. 
                 https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox#el_contenedor_flex
-            </p>
+             </p>
         </footer>
     </main>
 </body>
-
 </html>
