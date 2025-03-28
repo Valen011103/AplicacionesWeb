@@ -23,7 +23,7 @@ section > div{
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 100vh; 
+    min-height: 100vh; }
 
 #calFistSection{
    background-color: rgb(107, 107, 107);
@@ -41,6 +41,5 @@ border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display:grid;
-    max-width: 7 display:grid;
     width: 450px;
  }
