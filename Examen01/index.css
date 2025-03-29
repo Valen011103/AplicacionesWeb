@@ -10,7 +10,7 @@ main{
 section{
     justify-content: center;
     width: 450px;
-    height: 500px;
+    height: 625px;
     border-radius: 10px;
 }
 
@@ -30,12 +30,12 @@ header{
     width: 450px;
     height: 500px;
     border-radius: 10px;
-
 }
 
 .navbar{
     font-weight: lighter;
 }
+
 .container-fluid{
     font-weight: lighter;
 }
