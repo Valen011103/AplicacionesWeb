@@ -4,17 +4,32 @@ main{
     justify-content: center;
     align-items: center;
     display: grid;
-    height: 800px; 
+    /* height: 800px;  */
     width: 100%;
     background-blend-mode: overlay; 
 }
-    
-section{
-    background-color: #5F625E;
+
+.contenedor-calculadora {
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Centra verticalmente */
+}
+
+    
+/* section{ */
+    /* background-color: #5F625E; */
+    /* justify-content: center;
+    align-items: center; */
+    /* width: 450px;
+    height: 625px; */
+    /* border-radius: 10px; */
+/* } */
+
+.calculadora {
     width: 450px;
     height: 625px;
+    background-color: #5F625E;
     border-radius: 10px;
 }
 
@@ -48,13 +63,14 @@ header{
 }
 
 button{
+    display: flex; 
     padding: 10px 20px 10px 20px;
     width: 85px;
     height: 70px;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* X, Y, blur, color */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .botonNaranja{
@@ -62,13 +78,37 @@ button{
     color: #ffffff;
     border-radius: 10px;
     border-bottom: #F39C11 solid;
-
 }
 
 .botonBasico{
     background-color: #ffffff;
     color: #000;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .calculadora {
+        width: 50%; 
+        height: 80%; 
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contenedor-botones-calculadora {
+        width: 100%; 
+        gap: 5px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 20%; 
+        height: 12%; 
+        font-size: 10px; 
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
