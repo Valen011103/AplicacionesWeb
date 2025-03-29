@@ -13,18 +13,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Centra verticalmente */
+    height: 100vh; 
 }
 
     
-/* section{ */
-    /* background-color: #5F625E; */
-    /* justify-content: center;
-    align-items: center; */
-    /* width: 450px;
-    height: 625px; */
-    /* border-radius: 10px; */
-/* } */
 
 .calculadora {
     width: 450px;
