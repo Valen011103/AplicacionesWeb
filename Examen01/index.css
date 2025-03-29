@@ -1,13 +1,16 @@
 main{
+    background-color: #ffffffaa;
     background-image: url(https://thumbs.dreamstime.com/b/dinero-de-costa-rica-el-valor-nominal-más-alto-colones-acuñados-en-fondo-otros-billetes-este-pa%C3%ADs-moneda-se-acumularon-194883449.jpg);
     justify-content: center;
     align-items: center;
     display: grid;
     height: 800px; 
     width: 100%;
+    background-blend-mode: overlay; 
 }
     
 section{
+    background-color: #5F625E;
     justify-content: center;
     align-items: center;
     width: 450px;
@@ -45,30 +48,25 @@ header{
 }
 
 button{
-    background-color: #ffffff;
-    color: #000;
-    border-radius: 100px;
     padding: 10px 20px 10px 20px;
     width: 85px;
     height: 70px;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* X, Y, blur, color */
 }
-
-section > div{
-    border-radius: 10px;
-}
-
 
 .botonNaranja{
     background-color: #F39C11;
     color: #ffffff;
     border-radius: 10px;
-    
+    border-bottom: #F39C11 solid;
 }
 
 .botonBasico{
+    background-color: #ffffff;
+    color: #000;
     border-radius: 10px;
 }
 
