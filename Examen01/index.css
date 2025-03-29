@@ -9,9 +9,11 @@ main{
     
 section{
     justify-content: center;
+    align-items: center;
     width: 450px;
     height: 625px;
     border-radius: 10px;
+    
 }
 
 header{
@@ -21,15 +23,18 @@ header{
     padding: 19px 20px 19px 20px;
     border-radius: 10px 10px 0 0;
 }
+
 .botones-calculadora{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px; /* Espacio entre los botones */
-    width: 450px;
-    height: 500px;
+    width: 415px;
+    height: 446px;
     border-radius: 10px;
+    margin-top: 20px;
+    margin: auto;
 }
 
 .navbar{
