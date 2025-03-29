@@ -21,6 +21,17 @@ header{
     padding: 19px 20px 19px 20px;
     border-radius: 10px 10px 0 0;
 }
+.botones-calculadora{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones */
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+
+}
 
 .navbar{
     font-weight: lighter;
@@ -32,15 +43,15 @@ header{
 button{
     background-color: #ffffff;
     color: #000;
-    border-bottom: 1px solid #000;
+    border-bottom: solid #000;
     padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
+    font-size: 100px;
     width: 85px;
     height: 70px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 
