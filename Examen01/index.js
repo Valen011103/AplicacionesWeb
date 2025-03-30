@@ -18,7 +18,13 @@ botones.forEach(boton => {
 botonClear.addEventListener('click', () => {
     pantalla.textContent = '0';
 });
-// Limpiar pantalla con el botón "icono"
+
 botonClearIcono.addEventListener('click', () => {
-    pantalla.textContent = '0';
+    let actual = pantalla.textContent;
+
+    if (actual.length <= 1) {
+        pantalla.textContent = '0';
+    } else {
+        pantalla.textContent = actual.slice(0, -1);
+    }
 });
