@@ -1,6 +1,4 @@
-# React - Estilos a los componentes
 Investigación: Estilos en React 
-
 1.⁠ ⁠CSS tradicional (hojas de estilo externas)
 1.⁠ ⁠Descripción
 Es la forma clásica de agregar estilos. Se escribe el código de diseño en un archivo separado que termina en .css. Luego se conecta ese archivo al componente React usando una clase. Es como escribir una receta en una hoja aparte y luego seguirla en la cocina.
@@ -13,10 +11,9 @@ Es la forma clásica de agregar estilos. Se escribe el código de diseño en un 
 •⁠  ⁠Es fácil que dos estilos choquen si tienen el mismo nombre.
 •⁠  ⁠No es bueno para hacer estilos que cambien con el tiempo o dependen del usuario.
 4.⁠ ⁠Perspectiva personal
-Lo usaría solo si el proyecto es pequeño o muy básico. Es fácil de usarse pero puede que al haber muchos componentes se vuelva un problema
+Para proyectos pequenos
 
-
-2. Modulos CSS
+Módulos 2. CSS
 1.⁠ ⁠Descripción
 Es como usar archivos .css normales, pero los estilos están organizados para que solo afecten al componente donde se usan. Cada clase tiene un nombre único, así que no hay confusión entre componentes.
 2.⁠ ⁠Ventajas
@@ -28,8 +25,7 @@ Es como usar archivos .css normales, pero los estilos están organizados para qu
 •⁠  ⁠Puede ser más difícil si tienes muchos archivos.
 •⁠  ⁠No puedes hacer estilos que cambien dependiendo de lo que hace el usuario fácilmente.
 4.⁠ ⁠Perspectiva personal
-Parece que es util cuando hay muchos componentes
-
+Me parece que le da una perspectiva ordenada al codigo
 
 3.⁠ ⁠Componentes con estilo (CSS-in-JS)
 1.⁠ ⁠Descripción
@@ -43,8 +39,7 @@ Permite escribir los estilos directamente en el mismo archivo donde está el com
 •⁠  ⁠Puede ser difícil de entender al principio.
 •⁠  ⁠Hay que instalar una librería extra.
 4.⁠ ⁠Perspectiva personal
-Es una forma rapida de agregar CSS sin embargo no es eficiente.
-
+Es mas dinamico
 
 4.⁠ ⁠Estilos en línea
 1.⁠ ⁠Descripción
@@ -58,8 +53,7 @@ Se escriben los estilos directamente en el componente, como si fueran parte del 
 •⁠  ⁠No es bueno si tienes muchos estilos.
 •⁠  ⁠No puedes reutilizar los estilos en otros lugares.
 4.⁠ ⁠Perspectiva personal
-No sería bueno usarlo para todo el proyecto porque se vuelve difícil de leer.
-
+Solo lo usaría si es algo muy rápido o para probar. No sería bueno usarlo para todo el proyecto porque se vuelve difícil de leer.
 
 5.⁠ ⁠Frameworks CSS (Tailwind, Bootstrap, etc.)
 1.⁠ ⁠Descripción
@@ -73,7 +67,7 @@ Son herramientas que ya tienen clases listas para usar, como 'hacer el texto roj
 •⁠  ⁠Al principio cuesta aprender las clases.
 •⁠  ⁠Todo el estilo está mezclado con el componente.
 4.⁠ ⁠Perspectiva personal
-Es muy util, ya que los estilos vienen predefinidos.
+Es bastante util
 
 6.⁠ ⁠Librerías UI con estilo integrado (Material UI, Chakra UI, etc.)
 1.⁠ ⁠Descripción
@@ -87,4 +81,4 @@ Son conjuntos de botones, cuadros, menús y más, que ya vienen listos y con est
 •⁠  ⁠Puede hacer que tu sitio pese más.
 •⁠  ⁠A veces es difícil combinar con otras cosas.
 4.⁠ ⁠Perspectiva personal
-Se ve muy util.
+Se ve muy practico
