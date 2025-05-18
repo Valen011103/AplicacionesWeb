@@ -1,0 +1,11 @@
+# producción
+build/
+dist/
+
+# configuraciones de entorno
+.env
+.env.local
+
+# sistema y editor
+.DS_Store
+.vscode/
