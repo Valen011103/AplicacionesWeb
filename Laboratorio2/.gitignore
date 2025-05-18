@@ -9,3 +9,4 @@ dist/
 # sistema y editor
 .DS_Store
 .vscode/
+.DS_Store
