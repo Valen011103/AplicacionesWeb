@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './styles.css'; 
+import './stylesClickbutton.css'; 
 
 export const Clickbutton = () => {
   return <button>

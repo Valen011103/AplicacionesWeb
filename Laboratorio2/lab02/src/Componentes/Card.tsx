@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './styles.css'; 
+import './stylesCard.css'; 
 
 export const Card = () => {
   return <div className="notifications-container">

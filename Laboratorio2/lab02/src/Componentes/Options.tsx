@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import './styles.css'; 
+import './stylesOptions.css'; 
 
 export const Options = () => {
   return (
